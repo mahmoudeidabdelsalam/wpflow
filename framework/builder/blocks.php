@@ -25,7 +25,7 @@ function my_acf_init() {
 	// check function exists
 	if( function_exists('acf_register_block') ) {
 
-		// register Feature News
+		// register banner
 		acf_register_block(array(
 			'name'				      => 'banner',
       'title'				      => __('banner Slide'),
@@ -35,57 +35,6 @@ function my_acf_init() {
 			'icon'				      => 'images-alt2',
     ));
     
-		// register Feature News
-		acf_register_block(array(
-			'name'				      => 'banner-about',
-      'title'				      => __('content & icon'),
-      'description'		    => __('here insert Images animtions and icons with content.'),
-			'render_callback'	  => 'my_acf_block_render_callback',
-			'category'			    => 'builder',
-			'icon'				      => 'images-alt2',
-    ));
-    
-		// register Feature News
-		acf_register_block(array(
-			'name'				      => 'features',
-      'title'				      => __('features'),
-      'description'		    => __('here insert features item content.'),
-			'render_callback'	  => 'my_acf_block_render_callback',
-			'category'			    => 'builder',
-			'icon'				      => 'paperclip',
-    ));
-
-    // register Feature News
-		acf_register_block(array(
-			'name'				      => 'model-items',
-      'title'				      => __('Team items'),
-      'description'		    => __('here insert model items content & image.'),
-			'render_callback'	  => 'my_acf_block_render_callback',
-			'category'			    => 'builder',
-			'icon'				      => 'align-right',
-    ));
-    
-    // register Feature News
-		acf_register_block(array(
-			'name'				      => 'blog',
-      'title'				      => __('Blogs'),
-      'description'		    => __('here insert blogs'),
-			'render_callback'	  => 'my_acf_block_render_callback',
-			'category'			    => 'builder',
-			'icon'				      => 'media-spreadsheet',
-    ));
-    
-    // register Feature News
-		acf_register_block(array(
-			'name'				      => 'call-of-action',
-      'title'				      => __('call of action'),
-      'description'		    => __('here insert Content and buttons'),
-			'render_callback'	  => 'my_acf_block_render_callback',
-			'category'			    => 'builder',
-			'icon'				      => 'microphone',
-    ));
-    
-
   }
 }
 
