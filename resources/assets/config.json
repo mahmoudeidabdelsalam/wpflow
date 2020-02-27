@@ -8,8 +8,8 @@
       "./scripts/customizer.js"
     ]
   },
-  "publicPath": "/app/themes/qteam",
-  "devUrl": "https://qteam.test",
+  "publicPath": "/app/themes/template",
+  "devUrl": "https://templates.premast.com",
   "proxyUrl": "http://localhost:3000",
   "cacheBusting": "[name]_[hash:8]",
   "watch": [
