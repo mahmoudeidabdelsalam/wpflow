@@ -1,0 +1,57 @@
+/** Import Bootstrap functions */
+@import "~bootstrap/scss/functions";
+
+// ======== Grid settings ========
+$main-sm-columns:       12;
+$sidebar-sm-columns:    4;
+
+$grid-gutter-width: 4.2vw !default;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 480px,
+  md: 768px,
+  lg: 1200px
+);
+
+$container-max-widths: (
+  sm: 420px,
+  md: 720px,
+  lg: 1440px
+);
+
+// ======== border-raduis ========
+$primary-radius:       2px;
+
+// ===== Colors ======
+$brand-primary        : #ed1c24;
+$brand-secondary      : #2f2f2f;
+$brand-success        : #397730;
+$brand-white          : #fff;
+$brand-black          : #000;
+$brand-gray           : #2f2f2f;
+$brand-silver         : #8b8b8b;
+$brand-light          : #f5f5f5;
+
+// ==== list with all theme colors to be reused in @each =====
+$theme-color:
+  // color name     	color brand         text color    	secondry
+  "primary"          	$brand-primary      #fff       $brand-white,
+  "secondary"         $brand-secondary    #fff       $brand-white,
+  "success"           $brand-success      #fff       $brand-white,
+  "white"             $brand-white        #333       $brand-white,
+  "black"          	  $brand-black        #fff       $brand-white,
+  "gray"              $brand-gray         #fff       $brand-white,
+  "silver"            $brand-silver       #fff       $brand-white,
+  "light"             $brand-light        #fff       $brand-white;
+
+//** Global text color on `<body>`.
+$text-color: $brand-black !default;
+
+//** Global textual link color.
+$link-color: $brand-black !default;
+
+//** Link hover color set via `darken()` function.
+$link-hover-color : darken($link-color, 15%) !default;
+
+$font-sans : "Manrope3", sans-serif, Helvetica, Arial;

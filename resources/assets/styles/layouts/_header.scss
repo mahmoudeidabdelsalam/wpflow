@@ -1,0 +1,22 @@
+.banner .nav li {
+  @extend .nav-item;
+}
+
+.banner .nav a {
+  @extend .nav-link;
+}
+
+.navbar-brand {
+  img {
+    max-width: 120px;
+  }
+}
+
+.navbar-nav {
+  width: 100%;
+  justify-content: space-around;
+}
+
+.logos {
+  margin: 0 100px;
+}

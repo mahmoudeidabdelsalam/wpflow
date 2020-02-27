@@ -1,0 +1,68 @@
+button,
+a,
+input {
+  outline: none;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+body,
+html {
+  font-family: $font-sans;
+  overflow-x: hidden;
+}
+
+.zoom-effect {
+  .effect-link {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .effect-img {
+    transition: all 0.2s linear;
+  }
+
+  &:hover {
+    .effect-img {
+      transition: all 0.2s linear;
+      transform: scale(1.1);
+    }
+  }
+}
+
+.overlay {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba($brand-black, 0.2);
+}
+
+.background-image {
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 45px;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+h5,
+p {
+  font-size: 16px;
+}
